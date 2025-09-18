@@ -6,7 +6,7 @@ import QRSection from '../components/QrSection';
 import ServiceDetails from '../components/ServiceDetails';
 import ClientStatementOfWork from '../components/ClientStatementOfWork';
 import AgreedAndAccepted from '../components/AgreedAndAccepted';
-import ScopeOfWork from '../components/ScopeOfWork';
+import ScopeOfWork from "../components/ScopeOfWork";
 
 const text1 = `1. This Service Agreement and Statement of Work (the "SOW") attached hereto as Exhibit A (collectively, the "Agreement") set forth the terms and conditions concerning the event production services that ShowPhaze LLC (the "Company") are to provide to CLIENT NAME (the "Client"), collectively the "Parties" and individually a "Party". This Agreement comes into effect at the time of both Parties' mutual execution and will continue until services are complete, or until otherwise terminated by either party in writing with thirty (30) days advanced notice. If Company has commenced work on any event set forth SOW at the time Client elects to early terminate this Agreement, the Cancellation or Postponement policy set forth below shall apply. SERVICES. Company provides event production services, including, without limitation, audio engineer, lighting technician, camera and video operation, and event management services. The specific services (the "Services"), the specific event that Client is engaging Company for (the "Event"), the Event location, and the specific date(s) on which Services are to be rendered (the "Service Date(s)"), are stated in the SOW.`;
 const text2 = `Company understands that, at times, changes may need to be made to the scope of Services initially agreed on. If Client decides that they would like to change or extend the Services stated in the SOW, Client must provide Company with written notice outlining the proposed changes. Sometimes Company may have to decline proposed changes, and Company reserves the right to do so. Any acceptance of proposed changes may be subject to fee increases and additional upfront payment of fees.`;
@@ -50,7 +50,7 @@ const Container = ({
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem', // Creates the 2px border effect
         }}
@@ -135,7 +135,7 @@ const ContainerOvertime = () => {
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem',
         }}
@@ -228,7 +228,7 @@ const ContainerCancellation = () => {
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem',
         }}
@@ -312,7 +312,7 @@ const ContainerConfidentiality = () => {
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem',
         }}
@@ -436,7 +436,7 @@ const ContainerMiscellaneous = () => {
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem',
         }}
@@ -522,7 +522,7 @@ const ContainerTimeAndAHalf = () => {
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem',
         }}
@@ -602,7 +602,7 @@ const LastContainer = () => {
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem',
         }}
@@ -746,7 +746,7 @@ const LastContainer = () => {
 //               sx={{
 //                 width: '0.125rem', // 2px width
 //                 height: '5rem',
-//                 background: 'linear-gradient(to bottom, #FF69B4, #00BFFF)',
+//                 background: 'linear-gradient(to bottom, #c47ab2, #00BFFF)',
 //               }}
 //             />
 

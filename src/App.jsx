@@ -24,7 +24,7 @@ function App() {
   const [currentTab, setCurrentTab] = React.useState(0);
 
   return (
-    <LiveEvent />
+    <Integration />
   );
 }
 

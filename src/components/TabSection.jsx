@@ -25,7 +25,7 @@ const TabSection = ({
         aria-label="live event tabs"
         TabIndicatorProps={{
           sx: {
-            background: 'linear-gradient(90deg, #FF69B4 0%, #00BFFF 100%)',
+            background: 'linear-gradient(90deg, #c47ab2 0%, #00BFFF 100%)',
             height: '0.25rem',
           },
         }}

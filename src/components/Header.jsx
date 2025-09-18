@@ -35,7 +35,7 @@ const Header = () => {
         sx={{
           width: '0.125rem', // 2px width
           height: '5rem',
-          background: 'linear-gradient(to bottom, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to bottom, #c47ab2, #00BFFF)',
         }}
       />
 

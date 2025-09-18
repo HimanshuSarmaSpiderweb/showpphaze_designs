@@ -134,7 +134,7 @@ const GradientTab = (props) => (
         color: '#FFFFFF',
       },
       '&.Mui-selected .MuiTabs-indicator': {
-        background: 'linear-gradient(90deg, #FF69B4 0%, #00BFFF 100%)',
+        background: 'linear-gradient(90deg, #c47ab2 0%, #00BFFF 100%)',
         height: '0.25rem',
       },
       // You can also add styles for the underline here if you want it to be part of the tab itself, but overriding the indicator is the recommended way.
@@ -163,7 +163,7 @@ const GradientTab = (props) => (
 //         aria-label="live event tabs"
 //         TabIndicatorProps={{
 //           sx: {
-//             background: 'linear-gradient(90deg, #FF69B4 0%, #00BFFF 100%)',
+//             background: 'linear-gradient(90deg, #c47ab2 0%, #00BFFF 100%)',
 //             height: '0.25rem',
 //           },
 //         }}
@@ -247,7 +247,7 @@ const RoleTable = ({
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem', // Creates the 2px border effect
         }}
@@ -366,7 +366,7 @@ const LightingRoleTable = ({
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem', // Creates the 2px border effect
         }}
@@ -452,7 +452,7 @@ const VideoRoleTable = ({
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem', // Creates the 2px border effect
         }}
@@ -560,7 +560,7 @@ const ServicingNorthAmerica = () => {
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem',
         }}
@@ -679,7 +679,7 @@ const RatesTable = () => {
         sx={{
           display: "flex",
           alignItems: "stretch",
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem', // Creates the 2px border effect
         }}
@@ -736,7 +736,7 @@ const RatesTable = () => {
                 <Typography variant="h6" sx={{ fontSize: '0.7rem' }}>HALF</Typography>
               </Grid>
             </Grid>
-            <Box sx={{ height: '1px', background: 'linear-gradient(90deg, #FF69B4 0%, #00BFFF 100%)', width: '100%' }} />
+            <Box sx={{ height: '1px', background: 'linear-gradient(90deg, #c47ab2 0%, #00BFFF 100%)', width: '100%' }} />
 
             {/* Dynamic Rows */}
             {tableData.map((row, index) => (

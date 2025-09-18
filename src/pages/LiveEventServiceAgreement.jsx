@@ -46,7 +46,7 @@ const Container = ({
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem', // Creates the 2px border effect
         }}
@@ -131,7 +131,7 @@ const ContainerOvertime = () => {
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem',
         }}
@@ -224,7 +224,7 @@ const ContainerCancellation = () => {
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem',
         }}
@@ -308,7 +308,7 @@ const ContainerConfidentiality = () => {
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem',
         }}
@@ -432,7 +432,7 @@ const ContainerMiscellaneous = () => {
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem',
         }}
@@ -512,7 +512,7 @@ const LastContainer = () => {
     >
       <Box
         sx={{
-          background: 'linear-gradient(to top right, #FF69B4, #00BFFF)',
+          background: 'linear-gradient(to top right, #c47ab2, #00BFFF)',
           borderRadius: '1.25rem',
           padding: '0.125rem',
         }}
@@ -659,7 +659,7 @@ const AgreedAndAccepted = () => {
               sx={{
                 width: '0.25rem', // 2px width
                 height: '10rem',
-                background: 'linear-gradient(to bottom, #FF69B4, #00BFFF)',
+                background: 'linear-gradient(to bottom, #c47ab2, #00BFFF)',
               }}
             />
 
