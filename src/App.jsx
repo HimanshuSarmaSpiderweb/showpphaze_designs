@@ -24,7 +24,27 @@ function App() {
   const [currentTab, setCurrentTab] = React.useState(0);
 
   return (
-    <Integration />
+    <Box
+      sx={{
+        width: "100%",
+        height: "100%",
+        lineHeight: 1.5,
+        fontWeight: 400,
+        color: 'rgba(255, 255, 255, 0.87)',
+        fontFamily: 'Roboto, sans-serif',
+        // The following properties are not direct CSS properties for styling a component,
+        // so they cannot be directly translated to the `sx` prop.
+        // They are typically applied globally or by the browser.
+        //
+        // colorScheme: 'light dark',
+        // fontSynthesis: 'none',
+        // textRendering: 'optimizeLegibility',
+        // '-webkit-font-smoothing': 'antialiased',
+        // '-moz-osx-font-smoothing': 'grayscale',
+      }}
+    >
+      <Integration />
+    </Box>
   );
 }
 

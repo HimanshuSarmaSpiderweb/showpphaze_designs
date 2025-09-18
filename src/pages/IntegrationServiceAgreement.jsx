@@ -21,7 +21,7 @@ const text11 = `At least five (5) calendar days before the first Service Date, C
 const text12 = `While rendering the Services, Company may sometimes request approvals, revisions, assets, or information to be provided to Company. Unless otherwise mutually agreed, Client must provide Company with all approvals, revisions, assets, and information in writing within fourteen (14) calendar days, and no later than seven (7) calendar days before the first Service Date. At times Company may need a quicker turnaround, and Client must comply with such requests as communicated.`;
 const text13 = `Client understands that the Event Location may have restrictions that must be adhered to, and it is Client’s responsibility to ensure that any permits are secured to allow Company to carry out Services under this Agreement at the Event Location. Company will not under any circumstances be liable if Client does not adhere to such requirements or permits or if Company inadvertently does not adhere to such requirements due to them not being effectively communicated or communicated with reasonable notice. If the Event Location enforces noise restrictions, Company will comply with such restrictions regardless of Client’s request to do otherwise. Company strongly encourages Client to get event insurance for the Event. Company is responsible for all insurance for Company personnel.`;
 const text14 = `Access to the Event Location must be clearly communicated to Company at least seven (7) calendar days before the Event. There must be safe, clear, and sufficient space and parking available for Company to easily load in and load out of the Event Location. Company reserves the right to hold personnel from the performance of Services until safe access is identified.`;
-const text15 = `If personnel for the Event exceeds fifteen (15), a steward is required to be on-site and will be added to the Service Fee. If personnel for the Event exceeds forty (40), a steward and an additional steward or crew lead is required to be on-site and will be added to the Service Fee. We reserve the right to adjust the number of stewards based upon the general scope of work. Some steward work may also be done off-site to prepare for upcoming days.`;
+const text15 = `If personnel for the install exceeds fifteen (15), a working crew lead is required to be on-site and will be added to the Service Fee. If personnel for the Event exceeds forty (40), a Crew Lead and an Assit crew lead  is required to be on-site and will be added to the Service Fee. We reserve the right to adjust the number of stewards based upon the general scope of work. Some steward work may also be done off-site to prepare for upcoming days.`;
 const text16 = `If the Event is outside, Client must have an indoor plan for adverse weather, which is defined as rain, extreme wind, heat over 95°F, or any other conditions that make rendering Services dangerous, likely to damage equipment, or overtly difficult (an "Adverse Weather Event") that does not amount to a Force Majeure Event (as defined below). Client understands that in the event of an Adverse Weather Event, Company will not be able to perform Services outside, and if Client does not have an adverse weather plan enabling Services to be rendered indoors, Company will not be able to render Services, and Client will not be entitled to a refund.`;
 const text17 = `Company's Services are creative in nature and creative-based work is inherently subjective. Client acknowledges that although Company aims to meet Client's vision, goal, and purpose in the Services provided, Company requires and retains some degree of discretion regarding how Services are provided. Client agrees that they are familiar with Company's portfolio and are requesting Services with knowledge of the nature of Company's work, but with the understanding that Company's work is continually evolving and that they focus on meeting Client's particular event needs based on their experience and preferences communicated to them. Mere dissatisfaction in the creative elements of the Services that otherwise materially conform with the Event Production Schedule will not be deemed a breach of this Agreement by Company.`;
 const text18 = `Company reserves the right to terminate all Services without return of payment if, at Company's discretion, they determine that they have suffered harassment, abuse, bullying, inappropriate behavior, or discrimination from Client or any other individual under Client's control or are faced with an Event Location that is unsafe or unsanitary. In minor instances, Company will first notify Client and allow Client to rectify the conduct or fix the Event Location before termination of Services.`;
@@ -422,6 +422,13 @@ const ContainerMiscellaneous = () => {
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
         This Agreement is to be governed by, and interpreted, constructed, and enforced per the laws of the State of Texas without regard to conflict of laws.
+      </Typography>
+
+      <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 1 }}>
+        Entire Agreement.
+      </Typography>
+      <Typography variant="body1" sx={{ mb: 2 }}>
+        This Agreement represents the entire and exclusive agreement between the Parties, and all previous written, and oral agreements and communications related to the subject matter of this Agreement are superseded. Any subsequent amendments will only be effective if made in writing and signed by both Parties.
       </Typography>
     </>
   );
@@ -1110,7 +1117,7 @@ const IntegrationServiceAgreement = () => {
         />
 
         <Container
-          heading={"11. EVENT PRODUCTION SCHEDULE."}
+          heading={"11. INSTALL PRODUCTION SCHEDULE."}
           showHeading={true}
           textContent={text11}
         />
@@ -1190,7 +1197,7 @@ const IntegrationServiceAgreement = () => {
         />
 
         <Container
-          heading={"25. LIMITATION OF LIABILITY.."}
+          heading={"25. LIMITATION OF LIABILITY."}
           showHeading={true}
           textContent={text26}
         />

@@ -899,6 +899,22 @@ const IntegrationRateCard = () => {
           alignSelf: "flex-start"
         }}
       >
+        <Typography
+          sx={{
+            fontSize: '1.5rem',
+            fontWeight: 'bold',
+            color: '#FFFFFF',
+          }}
+        >
+          PRODUCTION LABOR & AV CREWING SERVICES
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          width: "100%",
+          alignSelf: "flex-start"
+        }}
+      >
         <ServicingNorthAmerica />
       </Box>
       <Box
