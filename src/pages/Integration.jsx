@@ -48,8 +48,8 @@ function Integration() {
             2: <IntegrationRateSheet />
           }}  
           tabLabels={[
-            "Integration Live Card",
-            "Install/Integration Service Agreement",
+            "Integration Rate Card",
+            "Install/Integration Service Integration",
             "Integration Rate Sheet",
           ]}
           currentTab={currentTab}
