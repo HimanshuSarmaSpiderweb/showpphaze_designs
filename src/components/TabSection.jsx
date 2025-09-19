@@ -1,4 +1,4 @@
-import { Box, Tab, Tabs, Typography } from "@mui/material";
+import { Box, Tab, Tabs, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 
 const TabSection = ({
@@ -6,6 +6,9 @@ const TabSection = ({
   currentTab,
   setCurrentTab
 }) => {
+
+  const isTablet = useMediaQuery("(max-width:1400px)");
+
   const handleChange = (event, newValue) => {
     setCurrentTab(newValue);
   };
@@ -20,6 +23,8 @@ const TabSection = ({
       }}
     >
       <Tabs
+        // scrollButtons="auto"
+        // variant="scrollable"
         value={currentTab}
         onChange={handleChange}
         aria-label="live event tabs"
@@ -41,6 +46,7 @@ const TabSection = ({
             <Tab
               label={tab}
               sx={{
+                width: "33%",
                 color: 'rgba(255, 255, 255, 0.5)',
                 fontSize: '1.15rem',
                 fontWeight: 'bold',

@@ -26,7 +26,7 @@ const Header = () => {
       <img 
         src={logoSvg}
         style={{
-          width: isTablet ? "15rem" : "25rem"
+          width: isTablet ? "20rem" : "25rem"
         }}
       />
 
@@ -42,6 +42,7 @@ const Header = () => {
       {/* Right Section: Separator, then Button and Contact Info */}
       <Stack direction="row" alignItems="center" spacing={5}
         sx={{
+          width: isTablet ? "20rem" : "25rem",
           display: "flex",
           justifyContent: isTablet ? "flex-end" : "flex-start"
         }}

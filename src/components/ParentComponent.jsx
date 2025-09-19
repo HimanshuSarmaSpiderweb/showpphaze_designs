@@ -25,7 +25,8 @@ const ParentComponent = ({
           padding: "4rem",
         }}
       >
-        <Header />
+        <Header 
+        />
         <TabSection 
           tabs={tabLabels}
           currentTab={currentTab}

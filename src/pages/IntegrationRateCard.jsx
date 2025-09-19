@@ -595,9 +595,6 @@ const ServicingNorthAmerica = () => {
             These documents are designed to provide a general overview for shows requested 14 days or more from request date
           </Typography>
           <Typography sx={{ fontSize: '1rem', color: '#FFFFFF' }}>
-            Rates may vary based various factors
-          </Typography>
-          <Typography sx={{ fontSize: '1rem', color: '#FFFFFF' }}>
             Estimates will outline actual costs
             <br />
             50% deposit is required to secure services
@@ -686,7 +683,6 @@ const RatesTable = () => {
       >
         <Box
           sx={{
-            flexGrow: 1, // Allows the box to grow and fill available space
             display: "flex", // Makes this a flex container
             alignItems: "center", // Vertically centers content
             gap: "2rem",
@@ -697,7 +693,7 @@ const RatesTable = () => {
           }}
         >
           {/* Table Container */}
-          <Grid container sx={{ flex: 1 }}>
+          <Grid container sx={{ flexGrow: 1 }}>
             {/* Main Headers */}
             <Grid container sx={{ borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>
               <Grid item xs={6}>
@@ -923,6 +919,40 @@ const IntegrationRateCard = () => {
         }}
       >
         <PositionsTable />
+      </Box>
+
+      <Box
+        sx={{
+          marginTop: "1.25rem",
+          width: "100%",
+          alignSelf: "flex-start"
+        }}
+      >
+        <Typography
+          sx={{
+            width: "100%",
+            textWrap: "wrap",
+            fontSize: '1.15rem',
+            fontWeight: '500',
+            color: '#FFFFFF',
+          }}
+        >
+          {`*California requests are subject to a 5-10% increase. Please request an estimate.`.toUpperCase()}
+        </Typography>
+      </Box>
+
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          width: "100%",
+          marginTop: "2rem"
+        }}
+      >
+        <DownloadButton 
+          name={"Integration Rate Card.pdf"}
+          url={"https://showphaze-dev.s3.ca-central-1.amazonaws.com/Rate-Sheet/Integration+Rate+Card.pdf"}
+        />
       </Box>
 
       <Box

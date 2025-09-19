@@ -44,13 +44,13 @@ function Integration() {
         <ParentComponent
           tabs={{
             0: <IntegrationRateCard />,
-            1: <IntegrationServiceAgreement />,
-            2: <IntegrationRateSheet />
+            1: <IntegrationRateSheet />,
+            2: <IntegrationServiceAgreement />,
           }}  
           tabLabels={[
             "Integration Rate Card",
-            "Install/Integration Service Integration",
             "Integration Rate Sheet",
+            "Install/Integration Service Agreement",
           ]}
           currentTab={currentTab}
           setCurrentTab={setCurrentTab}

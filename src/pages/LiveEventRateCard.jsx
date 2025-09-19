@@ -1,4 +1,4 @@
-import { Box, Typography, Grid, Tabs, Tab, Stack, Container } from '@mui/material';
+import { Box, Typography, Grid, Tabs, Tab, Stack, Container, useMediaQuery } from '@mui/material';
 import React from 'react';
 import logoSvg from "../assets/logo.svg";
 import fuseLogo from "../assets/logos/fuse.svg";
@@ -744,6 +744,9 @@ const RatesTable = () => {
 };
 
 const PositionsTable = () => {
+
+  const isTablet = useMediaQuery("(max-width:1400px)");
+
   return (
     <Box
       sx={{
@@ -771,7 +774,7 @@ const PositionsTable = () => {
             padding: '0 2rem',
             display: 'flex',
             flexDirection: 'column',
-            gap: '0.75rem',
+            gap: isTablet ? "0.35rem" : '0.75rem',
             height: '100%',
           }}
         >
@@ -882,19 +885,24 @@ const LiveEventRateCard = () => {
 
       <Box
         sx={{
+          marginTop: "1.25rem",
           width: "100%",
-          maxWidth: "700px",
           alignSelf: "flex-start"
         }}
       >
         <Typography
           sx={{
+            width: "100%",
+            textWrap: "wrap",
             fontSize: '1.15rem',
             fontWeight: '500',
             color: '#FFFFFF',
           }}
         >
           {`*Premium cities: Boston, Chicago, Denver, Miami, Seattle, New York, Washington DC and the state of California.`.toUpperCase()}
+          <br />
+          <br />
+          {`**California requests are subject to a 5-10% increase. Please request an estimate.`.toUpperCase()}
         </Typography>
       </Box>
 
@@ -903,7 +911,8 @@ const LiveEventRateCard = () => {
           display: "flex",
           justifyContent: "center",
           width: "100%",
-          marginTop: "2rem"
+          marginTop: "2rem",
+          marginBottom: "4rem"
         }}
       >
         <PartnerLogos />
@@ -917,7 +926,10 @@ const LiveEventRateCard = () => {
           marginTop: "2rem"
         }}
       >
-        <DownloadButton />
+        <DownloadButton 
+          name={"Live Event Rate Card.pdf"}
+          url={"https://showphaze-dev.s3.ca-central-1.amazonaws.com/Rate-Sheet/Live+Event+Rate+Card.pdf"}
+        />
       </Box>
 
       <Box

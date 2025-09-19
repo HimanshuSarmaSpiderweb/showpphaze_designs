@@ -1243,6 +1243,20 @@ const IntegrationServiceAgreement = () => {
 
       <Box
         sx={{
+          display: "flex",
+          justifyContent: "center",
+          width: "100%",
+          marginTop: "2rem"
+        }}
+      >
+        <DownloadButton 
+          name={"Integration Service Agreement.pdf"}
+          url={"https://showphaze-dev.s3.ca-central-1.amazonaws.com/Rate-Sheet/install+integration+service+agreement_forPrint.pdf"}
+        />
+      </Box>
+
+      <Box
+        sx={{
           marginBottom: "6rem",
         }}
       >

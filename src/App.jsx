@@ -15,6 +15,7 @@ import IntegrationRateCard from './pages/IntegrationRateCard';
 import LiveEventRateCard from './pages/LiveEventRateCard';
 import Integration from './pages/Integration';
 import LiveEvent from './pages/LiveEvent';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
 
@@ -24,27 +25,62 @@ function App() {
   const [currentTab, setCurrentTab] = React.useState(0);
 
   return (
-    <Box
-      sx={{
-        width: "100%",
-        height: "100%",
-        lineHeight: 1.5,
-        fontWeight: 400,
-        color: 'rgba(255, 255, 255, 0.87)',
-        fontFamily: 'Roboto, sans-serif',
-        // The following properties are not direct CSS properties for styling a component,
-        // so they cannot be directly translated to the `sx` prop.
-        // They are typically applied globally or by the browser.
-        //
-        // colorScheme: 'light dark',
-        // fontSynthesis: 'none',
-        // textRendering: 'optimizeLegibility',
-        // '-webkit-font-smoothing': 'antialiased',
-        // '-moz-osx-font-smoothing': 'grayscale',
-      }}
-    >
-      <Integration />
-    </Box>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/liveevent" element={
+          <Box
+            sx={{
+              width: "100%",
+              height: "100%",
+              minWidth: "1300px",
+              overflowX: "auto",
+              lineHeight: 1.5,
+              fontWeight: 400,
+              color: 'rgba(255, 255, 255, 0.87)',
+              fontFamily: 'Roboto, sans-serif',
+              // The following properties are not direct CSS properties for styling a component,
+              // so they cannot be directly translated to the `sx` prop.
+              // They are typically applied globally or by the browser.
+              //
+              // colorScheme: 'light dark',
+              // fontSynthesis: 'none',
+              // textRendering: 'optimizeLegibility',
+              // '-webkit-font-smoothing': 'antialiased',
+              // '-moz-osx-font-smoothing': 'grayscale',
+            }}
+          >
+            <LiveEvent />
+            {/* <Integration /> */}
+          </Box>
+          } />
+        <Route path="/integration" element={
+          <Box
+            sx={{
+              width: "100%",
+              height: "100%",
+              minWidth: "1100px",
+              overflowX: "auto",
+              lineHeight: 1.5,
+              fontWeight: 400,
+              color: 'rgba(255, 255, 255, 0.87)',
+              fontFamily: 'Roboto, sans-serif',
+              // The following properties are not direct CSS properties for styling a component,
+              // so they cannot be directly translated to the `sx` prop.
+              // They are typically applied globally or by the browser.
+              //
+              // colorScheme: 'light dark',
+              // fontSynthesis: 'none',
+              // textRendering: 'optimizeLegibility',
+              // '-webkit-font-smoothing': 'antialiased',
+              // '-moz-osx-font-smoothing': 'grayscale',
+            }}
+          >
+            <Integration />
+          </Box>
+        } />
+      </Routes>
+      
+    </BrowserRouter>
   );
 }
 

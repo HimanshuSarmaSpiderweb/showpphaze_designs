@@ -36,7 +36,7 @@ function LiveEvent() {
     >
       <Box
         sx={{
-          width: isMobile ? "95%" : isTablet ? "80%" : "75%",
+          width: isMobile ? "95%" : isTablet ? "90%" : "75%",
           maxWidth: isMobile ? "none" : "1500px",
           position: "relative",
           zIndex: "1",

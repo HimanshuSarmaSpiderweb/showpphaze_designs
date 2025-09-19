@@ -81,8 +81,6 @@ const Container = ({
             </Typography>
           </Box> : null}
           <Typography sx={{
-            lineHeight: "1.75rem",
-            fontSize: "1.15rem"
           }}>
             {textContent}
           </Typography>
@@ -94,28 +92,38 @@ const Container = ({
 
 
 const ContainerOvertime = () => {
-  const heading = "4. OVERTIME & INCREASED RATES";
+  const heading = "4. OVERTIME & INCREASED RATE";
   const textContent = (
     <>
-      <Typography variant="body1" sx={{ mb: 2 }}>
+      <Typography variant="body1" sx={{ 
+        mb: 2 
+      }}
+      >
         Services provided by each Company personnel outside of California will be billed to Client according to the following:
       </Typography>
       <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 1 }}>
         Overtime
       </Typography>
-      <Typography variant="body2" sx={{ mb: 2 }}>
+      <Typography variant="body2" sx={{ 
+        mb: 2 
+      }}>
         Regular Hourly Rate applies for hours worked between 6:00 am and 12:00 am. A rate of one and half (1.5x) of the Regular Hourly Rate will be charged for all additional hours worked between 10 and 12 hours and for all hours worked between 12:00 am and 6:00 am. A rate of double-time (2x) of the Regular Hourly Rate will apply for all hours worked past twelve (12) hours. If a personnel is already in overtime because they have worked more than ten (10) hours and they are also working between 12:00 am and 6:00 am then the rate will be increased to the double time rate (2x). If overtime is being charged for a federal holiday (see below), and the personnel works past ten (10) hours, then the overtime rate will be increased to double time (2x). If more than two overtime or meal penalties (as defined below) have been incurred, then any additional penalties will be increased in .5 increments (by way of example, double time (2x) goes to 2.5x, then to triple time (3x), and so on).
       </Typography>
       <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 1 }}>
         Holidays
       </Typography>
-      <Typography variant="body2" sx={{ mb: 2 }}>
+      <Typography variant="body2" sx={{ 
+        mb: 2 
+      }}>
         On Federal holidays a rate of one and a half (1.5x) of the Regular Hourly Rate will be charged for the first ten (10) hours, and after ten (10) hours, a rate of double-time (2x) of the Regular Hourly Rate will apply. Federal holidays include New Year's Day, Martin Luther King's Birthday, President's Day, Memorial Day, July Fourth, Labor Day, Veteran's Day, Thanksgiving Day, Christmas Day, and New Year's Eve (after 6:00 pm).
       </Typography>
       <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 1 }}>
         Minimum Hours for Certain Positions
       </Typography>
-      <Typography variant="body2">
+      <Typography variant="body2"
+        sx={{
+        }}
+      >
         All five (5) hour calls for lead and show positions will be billed for a full ten (10) hour call. For set and strike positions, all five (5) hour calls will be at the Regular Hourly Rate (as defined below) with a fee of Five U.S. dollars ($5) per position.
       </Typography>
     </>
@@ -165,7 +173,8 @@ const ContainerOvertime = () => {
               {heading}
             </Typography>
           </Box>
-          <Typography component="div">
+          <Typography component="div"
+          >
             {textContent}
           </Typography>
         </Box>
@@ -178,7 +187,9 @@ const ContainerCancellation = () => {
   const heading = "23. CANCELLATION OR POSTPONEMENT";
   const textContent = (
     <>
-      <Typography variant="body1" sx={{ mb: 2 }}>
+      <Typography variant="body1" sx={{ 
+        
+        mb: 2 }}>
         The fees stated in this section represent a reasonable estimate of the loss suffered by Company in the event of cancellation or postponement of the Event due to the decreasing likelihood of rebooking alternative services on that date upon late notice and are not intended to be a penalty. A "Force Majeure Event" is an event or series of related events that are outside the reasonable control of the Party affected, including but not limited to power failures, government shutdowns, disasters, fires, floods, riots, trade strikes, epidemics, pandemics, terrorist attacks, and wars that render the Services unable to be performed, but specifically exclude Adverse Weather Events.
       </Typography>
       <Typography variant="body1" sx={{ mb: 1 }}>
@@ -1287,7 +1298,10 @@ const LiveEventServiceAgreement = () => {
           marginTop: "2rem"
         }}
       >
-        <DownloadButton />
+        <DownloadButton 
+          name={"Live Event Service Agreement.pdf"}
+          url={"https://showphaze-dev.s3.ca-central-1.amazonaws.com/Rate-Sheet/live+event+service+agreement_forPrint.pdf"}
+        />
       </Box>
 
       <Box
