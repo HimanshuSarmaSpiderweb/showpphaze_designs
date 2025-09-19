@@ -58,7 +58,7 @@ function App() {
             sx={{
               width: "100%",
               height: "100%",
-              minWidth: "1100px",
+              minWidth: "1300px",
               overflowX: "auto",
               lineHeight: 1.5,
               fontWeight: 400,
